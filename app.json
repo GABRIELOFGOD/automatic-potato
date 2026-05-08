@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "ARIA",
+    "slug": "aria",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "aria",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0F2E"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.aria.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#0A0F2E"
+      },
+      "package": "com.aria.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-av",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0A0F2E",
+          "image": "./assets/images/splash-icon.png",
+          "resizeMode": "contain"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
